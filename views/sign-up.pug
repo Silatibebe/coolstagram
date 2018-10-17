@@ -1,0 +1,41 @@
+doctype html 
+html
+  head  
+   style
+    include css/sign-up.css  
+          
+  title Sign up  
+  script(defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css")
+  link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
+  
+  body
+   .container
+     h1.text-center coolstagram
+     p.text-center Sign up to see photos and videos from your friends
+     button 
+      i(class="fab fa-facebook")
+      span Log in with Facebook
+     p
+      hr
+      span OR
+      hr
+     .row
+       .col.md-6
+            form(method="POST", action="/sign-up", name="registration-form")
+              .form-group
+                 label FirstName
+                 input.form-control(type="text", id="firstName" name="firstName", placeholder="firstname")
+              .form-group
+                 label LastName
+                 input.form-control(type="text", id="lastName" name="lastName", placeholder="lastname")
+              .form-group
+                 label Email
+                 input.form-control(type="text", id="email" name="email", placeholder="email")
+              .form-group
+                 lable Password 
+                 input.form-control(type="text", id="password" name="password", placeholder="password")
+                 button.btn(type="submit") Sign up
+              
+              
+

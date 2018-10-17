@@ -1,0 +1,12 @@
+
+h1{
+    color: dodgerblue;
+}
+
+header nav a{    
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #ecc;
+    padding: 10px;
+    float: right;
+}

@@ -1,0 +1,37 @@
+doctype html 
+html
+  head  
+   style
+    include css/index.css  
+          
+  title=title  
+  script(defer="" src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css")
+  link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
+  body
+   .container
+     h1.text-center=message
+     .row
+       .col.md-6
+            form(method="GET", action="/profile", name="registration-form")
+              .form-group
+                 input.form-control(type="text", name="username", placeholder="Phone number,username,or email" id="username")
+              .form-group 
+                 input.form-control(type="text", name="password", placeholder="password" id="password")
+                 button.btn(type="submit") Log in
+                 p.hrcontainer
+                  hr
+                  span OR
+                  hr
+                 p
+                  i(class="fab fa-facebook") 
+                  span(class="loginwith") Log in with Facebook
+                 div.forgot-password
+                  a(href="#") Forgot password?
+
+   .container
+     div.sign-up
+      p Dont have an account?
+       a(href="/sign-up") Sign up           
+              
+

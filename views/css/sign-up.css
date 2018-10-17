@@ -1,0 +1,49 @@
+.btn{
+    background-color: lightskyblue;
+    margin: 10px 20px;
+    font-style: bold;
+    color: white;
+    }
+    h1.text-center{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: 'Pacifico', cursive;
+    }
+    .container,form{
+        margin-top: 15px;
+    }
+    .container{
+        border: 1px solid rgba(200,200,200,0.3);
+    }
+    button{
+    width: 100%;
+    background-color: lightskyblue;
+    color: white;
+    font-weight: bold;
+    margin: 15px 0px;
+    padding: 6px 0px;
+    border: none;
+    }
+    .loginwith{
+        margin-left: 10px;
+    }
+    span{
+        margin: 0px 10px;
+    }
+    #firstName,#lastName, #email, #password{
+        border: none;
+        background-color: rgba(200,200,200,0.2);  
+    }
+    p{
+      color: #999;
+      font-weight: bold;
+      
+    }
+    .btn{
+        margin-left: 0px;
+    }
+    hr{
+        display: inline-flex;
+        width: 48%;  
+  
+      }
